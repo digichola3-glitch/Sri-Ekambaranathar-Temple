@@ -26,6 +26,87 @@ align-items: center;
 
 }
 
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h3 {
+    font-size: 18px;
+    color: #c89b3c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2b1b0f;
+    margin-bottom: 15px;
+}
+
+.about-info p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+
+.temple-carousel {
+    margin-top: 40px;
+}
+
+.carousel-bg {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.carousel-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 600px;
+    color: #fff;
+    z-index: 2;
+}
+
+.carousel-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffd77a;
+    margin-bottom: 12px;
+}
+
+.carousel-content p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+
         /* Custom Navbar CSS */
         * {
             margin: 0;
@@ -40,21 +121,30 @@ align-items: center;
 
         nav {
             background: #ffffff;
-            padding: 1rem 2rem;
+            padding: 0.1rem 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
-            margin-bottom: 30px;
         }
 
+      
         .nav-container {
-            max-width: 1200px;
+          width: 100%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+.navText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navHeading{
+  color: #951F44;
+  color: #c89b3c;
+}
 
         .logo {
             display: flex;
@@ -144,13 +234,38 @@ align-items: center;
                 background: #ffffff;
                 flex-direction: column;
                 gap: 0;
-                padding: 1rem 0;
+                padding: 0 0;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease;
             }
 
+            .navHeading{
+ font-size: 18px;
+}
+
+.mainHeadingh1{
+  font-size: 24px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mainHeadingh2{
+  font-size: 16px;
+}
+.about-info p{
+  width: 94%;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 40px;
+    left:6px;
+    max-width: 550px;
+    color: #fff;
+    z-index: 2;
+    padding: 10px;
+}
             .nav-links.active {
                 max-height: 300px;
             }
@@ -231,11 +346,8 @@ align-items: center;
 
 /* POOJA CARDS GRID */
 .pooja-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
+  display:flex;
+justify-content: center;
 }
 
 /* INDIVIDUAL CARD */
@@ -372,7 +484,6 @@ h2,
 h3 {
   font-family: "arrusbtroman" !important;
   color: #9f1605;
-  text-transform: uppercase;
 }
 
 h2,
@@ -389,18 +500,15 @@ p {
   display: block;
   overflow: hidden;
 }
-
-.icons p,
-h2,
-h3 {
-  text-transform: uppercase;
-}
-
+ 
 #about,
 body {
   background: #faebd7;
 }
 
+#about{
+  margin-top: 20px;
+}
 .col-lg-6,
 .col-md-6 {
   align-self: flex-start;
@@ -634,7 +742,7 @@ p {
   padding: 10px 20px;
 }
 
-.involved-inner li img,
+ 
 .logo2 {
   position: relative;
   top: 20px;
@@ -682,11 +790,7 @@ p {
   border-radius: 20px;
 }
 
-.about-img {
-  position: relative;
  
-  top: -120px;
-}
 .about-img img{
   width: 60%;
 }
@@ -703,14 +807,25 @@ p {
   padding-left: 50%;
 }
 
-#about h2 {
-  padding-left: 50%;
-}
+ 
+ .homeIntro{
+ width: 60%;
+ text-align: center;
+ margin: auto;
+ margin-bottom:10vh;
+ }
+ .homeIntro img{
+  width: 60%;
+ }
+ .homeHeroText{
+  align-self: center;
+  margin-top: 20px;
+ }
 
-#about h3 {
-  padding-left: 48%;
-}
-
+ .homeHeroImg{
+  width: 80% !important;
+ }
+ 
 #first-arrow {
   margin-left: 48px;
 }
@@ -2313,9 +2428,10 @@ p {
 }
 
 .involved-inner {
-  background-image: url(../images/get-involved-bg.webp);
-  background-position: inherit;
-  background-size: cover;
+  background-image: url(../images/backDrop.PNG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
   top: 60px;
   left: 0;
@@ -2324,6 +2440,7 @@ p {
 
 .involved-inner .row {
   background: #741c18cf;
+  padding-top: 10px;
   margin: 0;
   border-radius: 10px;
 }
@@ -2336,8 +2453,12 @@ p {
 }
 
 .involved-inner li {
-  border-top: 1px dashed #fefe64ab;
-  padding: 0 0 0 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px dashed #fefe64ab;
+ padding: 14px 10px;
+ margin-bottom: 10px;
 }
 
 .involved-inner li span {
@@ -2346,9 +2467,23 @@ p {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  position: relative;
-  top: 30px;
-  left: 40px;
+  border: 0;
+  padding: 0;
+}
+.liDiv{
+  display: flex;
+  justify-content: space-between;
+  width:90%;
+  margin: auto;
+  padding-left: 10px;
+}
+
+.involved-inner li small {
+  color: #ffffffe8;
+ 
+  font-size: 18px;
+  font-weight: 600;
+ 
   border: 0;
   padding: 0;
 }
@@ -2655,6 +2790,9 @@ textarea {
 .social-media li {
   text-align: center;
   padding-top: 20px;
+}
+.social-media{
+  margin-bottom: 10px;
 }
 
 .social-media a,
@@ -5320,14 +5458,28 @@ input:-internal-autofill-selected {
 
   .involved-inner,
   .involved-inner li img {
-    top: 15px;
+    width: 35px;
+  }
+   .involved-inner li img {
+  margin-bottom: 10px;
   }
 
   .involved-inner li span {
-    top: 18px;
-    left: 12px;
-    font-size: 14px;
+ 
+    font-size: 12px;
   }
+
+.involved-inner li small {
+  color: #ffffffe8;
+  
+  font-size: 12px;
+ 
+  padding-left: 4px;
+ 
+  border: 0;
+  padding: 0;
+}
+
 
   .involved-inner span {
     font-size: 20px;
@@ -5751,10 +5903,7 @@ input:-internal-autofill-selected {
     padding: 15px 0;
   }
 
-  #about h2,
-  #about h1 {
-    padding-left: 45%;
-  }
+ 
 
   .fa-map-marker-alt,
   h3 {
@@ -6086,13 +6235,11 @@ input:-internal-autofill-selected {
   }
 
   .involved-inner li img {
-    top: 10px;
-    width: 44px;
+    width: 30px;
   }
 
   .involved-inner li span {
-    top: 14px;
-    left: 20px;
+ 
     font-size: 13px;
   }
 
@@ -6831,14 +6978,11 @@ input:-internal-autofill-selected {
   }
 
   .involved-inner li span {
-    top: 20px;
-    left: 25px;
+ 
     font-size: 17px;
   }
 
-  .involved-inner li img {
-    top: 12px;
-  }
+ 
 
   .light-inner {
     padding: 17px 30px 50px;
@@ -7228,8 +7372,7 @@ input:-internal-autofill-selected {
 
   .involved-inner li span {
     font-size: 17px;
-    top: 18px;
-    left: 35px;
+ 
   }
 
   .involved-inner .plus {
@@ -7607,7 +7750,7 @@ input:-internal-autofill-selected {
   }
 
   .involved-inner li span {
-    top: 20px;
+ 
     font-size: 18px;
   }
 
@@ -8593,7 +8736,7 @@ input:-internal-autofill-selected {
   }
 
   .involved-inner li span {
-    top: 20px;
+ 
     font-size: 18px;
   }
 
@@ -9325,9 +9468,7 @@ input:-internal-autofill-selected {
     padding: 30px 0;
   }
 
-  .involved-inner li {
-    padding: 0 0 3px 25px;
-  }
+ 
 
   .fa-facebook-f {
     padding: 6px 10px;
