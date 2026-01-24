@@ -1,13 +1,6 @@
 AOS.init();
-let overlay = document.querySelector(".menu_overlay"),
-  open = document.querySelector(".menu-icon"),
-  close = document.querySelector(".fa-times");
-open.addEventListener("click", () => {
-  overlay.style.transform = "translateY(0)";
-}),
-  close.addEventListener("click", () => {
-    overlay.style.transform = "translateY(-110%)";
-  }),
+let overlay = document.querySelector(".menu_overlay")
+ 
   $(window).scroll(function () {
     $(this).scrollTop() >= 50
       ? $("#return-to-top").fadeIn(200)
@@ -106,24 +99,7 @@ $cell.find(".js-expander").click(function () {
     e.removeClass("is-expanded").addClass("is-collapsed"),
       $cell.not(e).removeClass("is-inactive");
   });
-const app = (() => {
-  let e,
-    s,
-    l,
-    i = () => {
-      (e = document.querySelector("body")),
-        (s = document.querySelector(".menu-icon")),
-        (l = document.querySelectorAll(".nav__list-item")),
-        a();
-    },
-    a = () => {
-      s.addEventListener("click", () => r(e, "nav-active"));
-    },
-    r = (e, s) => {
-      e.classList.contains(s) ? e.classList.remove(s) : e.classList.add(s);
-    };
-  i();
-})();
+ 
 var $imagesSlider = $(".gallery-slider .gallery-slider__images>div"),
   $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
 $imagesSlider.slick({
