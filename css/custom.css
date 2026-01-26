@@ -70,7 +70,16 @@ align-items: center;
     padding-top: 10px;
 
  }
+  #highlightsCarousel1{
+    background-color: #7e5d4e;
+    border-radius: 24px;
+    padding-top: 10px;
+
+ }
 #highlightsCarousel h1{
+  color: white;
+}
+#highlightsCarousel1 h1{
   color: white;
 }
  
@@ -358,6 +367,10 @@ align-items: center;
 
             
 #highlightsCarousel h1{
+  color: white;
+  font-size: 18px;
+}
+#highlightsCarousel1 h1{
   color: white;
   font-size: 18px;
 }
