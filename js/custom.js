@@ -51,9 +51,9 @@ let overlay = document.querySelector(".menu_overlay")
     autoplaySpeed: 5e3,
     arrows: !0,
     nextArrow:
-      '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+      '<div class="galleryArrow slick-custom-arrow slick-custom-arrow-right"><img src="images/arrow.webp" alt="Arrow" class="img-fluid"></div>',
     prevArrow:
-      '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+      '<div class="galleryArrow slick-custom-arrow slick-custom-arrow-left"><img src="images/arrow.webp" alt="Arrow" class="img-fluid"></div>',
     responsive: [
       {
         breakpoint: 767,
