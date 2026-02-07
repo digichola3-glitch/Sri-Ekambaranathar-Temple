@@ -59,167 +59,146 @@ align-items: center;
 }
 
  
-
-.temple-carousel {
-    margin-top: 40px;
+.temple-highlights {
+  padding: 80px 0;
 }
 
- #highlightsCarousel{
-    background-color: #7e5d4e;
-    border-radius: 24px;
-    padding-top: 10px;
-
- }
-  #highlightsCarousel1{
-    background-color: #7e5d4e;
-    border-radius: 24px;
-    padding-top: 10px;
-
- }
-#highlightsCarousel h1{
-  color: white;
+.gallery {
+  margin-top: 40px;
 }
-#highlightsCarousel1 h1{
-  color: white;
-}
- 
-.carousel-img{
- 
+
+.gallery-cell {
   width: 100%;
-  margin: auto;
-  margin-top: 30px;
+  margin-right: 20px;
 }
-.carousel-img img{
-  width: 100%;
-}
- 
 
+/* Slide Layout */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #7e5d4e;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.carousel-wrapper1 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #02417e;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* Image */
+.carousel-img {
+  flex: 1;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
 .carousel-content {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    max-width: 600px;
-    color: #fff;
-    z-index: 2;
+  flex: 1;
+  color: #fff;
 }
 
 .carousel-content h3 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #ffd77a;
-    margin-bottom: 12px;
+  font-size: 28px;
+  color: #ffd77a;
+  margin-bottom: 15px;
 }
 
 .carousel-content p {
-    font-size: 15px;
-    line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 8%;
-    bottom: 10px;
+/* Flickity Controls */
+.flickity-button {
+  background: rgba(255,255,255,0.7);
 }
 
-
-.temple-highlights {
-    padding: 80px 0;
+.flickity-button-icon {
+  fill: #000;
 }
 
-/* Layout */
-.temple-carousel .carousel-bg {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 20px;
-    min-height: 460px;
-    width: 90%;
-    margin: auto;
+.flickity-page-dots .dot {
+  background: #ffd77a;
 }
 
-/* FIXED IMAGE CONTAINER */
-.temple-carousel .carousel-img {
-    flex: 0 0 50%;
-    height: 380px;            /* 🔒 fixed height */
-    overflow: hidden;
-    border-radius: 14px;
-}
+/* ===== MOBILE ===== */
+@media (max-width: 992px) {
 
-/* IMAGE BEHAVIOR */
-.temple-carousel .carousel-img img {
+  .carousel-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+    .carousel-wrapper1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .carousel-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;        /* prevents distortion */
+    height: 250px;
+  }
+
+  .carousel-content {
+    margin-top: 20px;
+  }
+
 }
 
-/* CONTENT */
-.temple-carousel .carousel-content {
-    flex: 0 0 50%;
-    position: relative;
-    padding-bottom: 70px;
+/* Ensure each slide takes full width properly */
+.gallery-cell {
+  width: 100%;
 }
 
-.temple-carousel .carousel-content h3 {
-    font-size: 28px;
-    margin-bottom: 12px;
+/* Prevent layout breaking inside Flickity */
+.flickity-viewport {
+  width: 100%;
 }
 
-.temple-carousel .carousel-content p {
-    font-size: 16px;
-    line-height: 1.7;
-}
+/* ===== MOBILE FIX ===== */
+@media (max-width: 992px) {
 
-/* BOTTOM CENTER ARROWS */
-.temple-carousel .carousel-nav {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 18px;
-}
-
-.temple-carousel .carousel-control-prev,
-.temple-carousel .carousel-control-next {
-    position: static;
-    width: 42px;
-    height: 42px;
-    background: rgba(255, 255, 255, 0.65);
-    border-radius: 50%;
-    opacity: 1;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.temple-carousel .carousel-control-prev-icon,
-.temple-carousel .carousel-control-next-icon {
-    filter: invert(1);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .temple-carousel .carousel-bg {
-        flex-direction: column;
-        min-height: auto;
+  .carousel-wrapper {
+    flex-direction: column !important;
     align-items: stretch;
-    gap: 40px;
+    text-align: center;
+  }
+
+  .carousel-wrapper1 {
+    flex-direction: column !important;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .carousel-img {
     width: 100%;
+    height: 250px;
+  }
 
-    min-height: 460px;
-    }
+  .carousel-content {
+    width: 100%;
+    margin-top: 20px;
+  }
 
-    .temple-carousel .carousel-img {
-        width: 90%;
-        height: 260px;   /* fixed mobile height */
-    }
-
-    .temple-carousel .carousel-content {
-        padding-bottom: 80px;
-        text-align: center;
-    }
 }
+
+
+
 
 
 .lang-toggle {
@@ -419,10 +398,14 @@ align-items: center;
   width: 94%;
 }
 
+.about-carousel-inner{
+  background-color: #7e5d4e;
+}
+
 .carousel-content {
-    position: absolute;
-    bottom: 40px;
-    left:6px;
+    /* position: absolute; */
+    /* bottom: 40px; */
+    /* left:6px; */
     max-width: 550px;
     color: #fff;
     z-index: 2;
@@ -462,6 +445,128 @@ align-items: center;
             color: #6b7280;
             line-height: 1.6;
         }
+
+
+.festival-time {
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.festival-involved-inner{
+  margin: auto;
+}
+
+.member-involved-inner{
+  margin: auto;
+}
+.involved-inner li small{
+  width: 70%;
+}
+/* Morning Highlight */
+.festival-time.morning {
+    background: #fff3cd;        /* soft golden */
+    color: #b8860b;             /* temple gold */
+}
+
+/* Night Highlight */
+.festival-time.night {
+    background: #e3f2fd;        /* soft blue */
+    color: #0d47a1;             /* deep blue */
+}
+.festival-time {
+    font-weight: 700;
+    padding: 4px 12px !important;
+    border-radius: 25px;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+/* Morning Style */
+.festival-time.morning {
+    background: linear-gradient(45deg, #d4af37, #f8e08e);
+    color: #5a3e00;
+}
+
+/* Night Style */
+.festival-time.night {
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    color: #ffffff;
+}
+
+
+
+
+.other-festivals-section {
+    padding: 60px 30px;
+
+}
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.festival-card {
+    background: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    border-top: 4px solid #d4af37;
+}
+
+.festival-card:hover {
+    transform: translateY(-5px);
+}
+
+.festival-card span {
+    display: inline-block;
+    background: linear-gradient(45deg, #d4af37, #f8e08e);
+    color: #5a3e00;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.festival-card p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+.designation-badge {
+    font-weight: 600;
+    padding: 4px 12px !important;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+/* Chairperson Highlight */
+.designation-badge.chairperson {
+    background: linear-gradient(45deg, #d4af37, #f8e08e);
+    color: #5a3e00;
+}
+
+/* Member Highlight */
+.designation-badge.member {
+    background: #e3f2fd;
+    color: #0d47a1;
+}
 
 
         /* Custom Navbar CSS */
@@ -2662,6 +2767,18 @@ border-radius: 16px;
   border: 0;
   padding: 0;
 }
+
+
+.member-involved-inner li small {
+  color: #ffffffe8;
+ 
+  font-size: 18px;
+  font-weight: 600;
+ text-align: center;
+  border: 0;
+  padding: 0;
+}
+
 
 #table-header .col,
 .dropdown li a,
