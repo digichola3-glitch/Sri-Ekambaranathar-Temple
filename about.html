@@ -63,7 +63,9 @@
            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
-                       <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="festival.html">Festival</a></li>
+                <li><a href="administration.html">Administration</a></li>
 
                 
                 <li><a href="#footer">Contact</a></li>
@@ -127,208 +129,165 @@
     </div>
                  
              </div>
- 
 
-             <section class="temple-highlights">
+
+<!-- Flickity CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<section class="temple-highlights">
+
   <div class="container">
 
-    <div id="highlightsCarousel"
-         class="carousel slide temple-carousel"
-         data-bs-ride="carousel"
-         data-bs-interval="5000">
+   
 
-      <!-- Heading -->
-      <div class="get-hdng text-center">
-        <h1>Gopuram</h1>
-        <img src="images/motif-1.webp" class="img-fluid" alt="Motif">
+    <!-- Flickity Carousel -->
+    <div class="gallery js-flickity"
+         data-flickity-options='{ 
+           "wrapAround": true,
+           "autoPlay": 5000,
+           "pauseAutoPlayOnHover": true,
+           "pageDots": true,
+           "prevNextButtons": true
+         }'>
+
+      <!-- Slide 1 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-img">
+            <img src="images/rajaGopuram.jpeg" alt="South Rajagopuram">
+          </div>
+          <div class="carousel-content">
+            <h3>South Rajagopuram</h3>
+            <p>
+              South Rajagopuram has 9 tiers with a height of 192 feet, width 82 feet and length 115 feet.
+              It is one of the tallest south-facing Rajagopurams. The kalkaram is made of granolithic
+              stones showcasing Vijayanagara architectural excellence.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="carousel-inner">
-
-        <!-- 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/rajaGopuram.jpeg" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>South Rajagoupram</h3>
-              <p>
-                South rajagoupram having 9 tier towers and it is dimensions are height 192 feet,width 82 feet and length115 feet . This southrajagopuram is one of the tallest among temples which holds southern faced rajagopuram . The kalkaram is made up of Granolithic Stones which shows the epitome of the vijayanagara empire architectural features .
-              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
+      <!-- Slide 2 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-img">
+            <img src="images/pallavaGopuram.jpeg" alt="Pallava Gopuram">
+          </div>
+          <div class="carousel-content">
+            <h3>Pallava Gopuram</h3>
+            <p>
+              Constructed during the Pallava era (600–650 CE), located at the 3rd praharam.
+              It is a 7-tier Gopuram standing 34.90 feet tall and serves as the entrance
+              to the 1000 Pillar Mandapam.
+            </p>
           </div>
         </div>
-
-        <!-- 2 -->
-        <div class="carousel-item">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/pallavaGopuram.jpeg" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>Pallava Gopuram</h3>
-              <p>
-This Gopuram Constructed In Pallava Era Around 600 to 650 CE, This Gopuram Located At 3rd Praharam Of This Temple Which is also Entrance For 1000 Pillar Mandapam , It Is 7 Tier Gopuram, Which Stands as Tall as 34.90 Feet From Ground Level,              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="carousel-item">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/westGopuram.jpeg" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>West Gopuram</h3>
-              <p>
-This Gopuram Located at Western Side of the Temple Complex. This Gopuram Constructed In Pallava Era Around 600 to 650 CE, This Gopuram Located At 3rd Praharam Of This Temple Which Provides Entrance to 4th Praharam. It Is 7 Tier Gopuram, Which Stands as Tall as 34.90 Feet From Ground Level.              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Slide 3 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper">
+          <div class="carousel-img">
+            <img src="images/westGopuram.jpeg" alt="West Gopuram">
+          </div>
+          <div class="carousel-content">
+            <h3>West Gopuram</h3>
+            <p>
+              Located on the western side of the temple complex. Built during the Pallava era
+              (600–650 CE), this 7-tier Gopuram provides access from the 3rd to 4th praharam.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+
 </section>
 
+<!-- Flickity JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
-             <section class="temple-highlights">
+
+
+
+
+<section class="temple-highlights">
+
   <div class="container">
 
-    <div id="highlightsCarousel1"
-         class="carousel slide temple-carousel"
-         data-bs-ride="carousel"
-         data-bs-interval="5000"
-          style="background-color: #01417e;"
-         >
 
-       
+    <!-- Flickity Carousel -->
+    <div class="gallery js-flickity"
+         data-flickity-options='{ 
+           "wrapAround": true,
+           "autoPlay": 5000,
+           "pauseAutoPlayOnHover": true,
+           "pageDots": true,
+           "prevNextButtons": true
+         }'>
 
-      <div class="carousel-inner">
-
-    
-
-        <!-- 4 -->
-        <div class="carousel-item active">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/h7.png" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>Nilathingal Thunda Perumal</h3>
-              <p>
-In the eastern part of the first prakara there are Vadapal Nallakambar, Surya Murthy and Nilatunda Perumal. Anointed with good cumber urdutra.
+      <!-- Slide 1 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper1">
+          <div class="carousel-img">
+            <img src="images/h7.png" alt="South Rajagopuram">
+          </div>
+          <div class="carousel-content">
+            <h3>Nilathingal Thunda Perumal</h3>
+            <p>
+    In the eastern part of the first prakara there are Vadapal Nallakambar, Surya Murthy and Nilatunda Perumal. Anointed with good cumber urdutra.
 On the north prakara wall of Thirumanchanak well, during the reign of Maravarman Kulasekara Panth, there is a message painted in the time of the Kallakambara of Kandayatarayar burning in Thirumunbu, thirty-two cows for each Tirunanda lamp, and one hundred money for Rishabha and Sribandarat.
 Suryamurthy is standing in the kolam with beauty. In Nilatunda Perumal Sannidhi, two Thirumal Thirumenis are seen in the standing golam. One of these is Suthiyalam. Their heads have the image of a mitu naga spread out.
 This Perumal sannidi is one of the hundred and eight divya desas of the Vaishnavas. It is one of the fourteen Divvi Desams in Kanchi. May the Lord relieve Mahavishnu of the heat during his drinking of nectar in the ocean of Tirupa After meditating in the light direction, the moonlight on Lord Shivas head fell on Vishnu and the heat got rid of him and he got peace and got the name Nilatunda Perumal.
 Phraithuntawar Satayai, Perunganchi MPinjnagane! sang Upper. Thirumangaiyazhwar praised this Lord as Nilat Tingal Tundatta as the light of the crescent moon wearing Shivas satail dissipated the heat of the silk Tirumal.
-              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
+              
+            </p>
           </div>
         </div>
+      </div>
 
-        <!-- 5 -->
-        <div class="carousel-item">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/amman.jpeg" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>Pralaya Kala Amman</h3>
-              <p>
-
+      <!-- Slide 2 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper1">
+          <div class="carousel-img">
+            <img src="images/amman.jpeg" alt="Pallava Gopuram">
+          </div>
+          <div class="carousel-content">
+             <h3>Pralaya Kala Amman</h3>
+            <p>
+    
 There is a separate shrine for this Ambika in the 2nd prakaram. Ambika here is known as the power of the deluge of the goddess who protects the world from depression and destruction. The Pralayanath Ilingam in the temple is on the left side of the inner circle to commemorate the deity worshiped by this Shakti.
 Pralaya Kala Shakti carries weapons in seven hands and rests one hand on her left thigh. Aadi Pooram special abhishekam, decoration and worship are performed on Pooram Nakshatra in the month of Aadi. On Navratri days, special abhishekam, decoration and worship are done to Pralaya Kala Shakti. And to cool down the summer heat of the month of Chitra, Ila Neer Abhishekam is best done annually.
-No other temple in Kanchi has this power. It is said that this power stopped the overflowing flood while Umayammai was worshiping the Lord.              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
+No other temple in Kanchi has this power. It is said that this power stopped the overflowing flood while Umayammai was worshiping the Lord.              
+            </p>
           </div>
         </div>
-
-        <!-- 6 -->
-        <div class="carousel-item">
-          <div class="carousel-bg">
-            <div class="carousel-img">
-              <img src="images/mavadi.jpeg" alt="">
-            </div>
-            <div class="carousel-content">
-              <h3>Mavadi Sannathi</h3>
-              <p>
-It is famous for having a mango tree as its main tree became Ambaram. Makarats hind rakaram is not hypnotized in tamil. According to the vernacular rule, Amram is derived from the verb Ekamennum and Ekambaram. Ekambaram is Maruvirtu as Ekambam and Kambham.
-It ranks first among the seven pearling sites. Due to the survival of the trade, Tiruvottiyur crossed the border This is the place where Lord gave sight in his left eye to Sundaramurthy Nayanar, who lost both eyes. Kadavaragone Nayanar, Thirukuripupu Thanda Nayanar, the Iyads who sang Thala Venbhakas, Sakya Nayanar is the Nayanmar. Here there are lingams painted by Brahma, Vishnu and Urudhara. They are known as Vellakampam, Kallag Kampam and Nalla Kampam respectively.For Ikkachi Ekamba There are only twelve Padhikams in Thirumyam. These were taught by three of the four religious leaders. Along with Kachiyekamba, there are six temples including Kachi Mertalali, Kachionakanthanarli, Kachinarikaraikkadu, Kachiyanegathangavatam and a burial ground called Kachi Mayanam. Among these, Kachimayanam is located in front of the flag tree in Tirukkachi Ekamba.              </p>
-              <div class="carousel-nav">
-                <button class="carousel-control-prev" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                        data-bs-target="#highlightsCarousel1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
       </div>
+
+      <!-- Slide 3 -->
+      <div class="gallery-cell">
+        <div class="carousel-wrapper1">
+          <div class="carousel-img">
+            <img src="images/mavadi.jpeg" alt="West Gopuram">
+          </div>
+          <div class="carousel-content">
+              <h3>Mavadi Sannathi</h3>
+            <p>
+     It is famous for having a mango tree as its main tree became Ambaram. Makarats hind rakaram is not hypnotized in tamil. According to the vernacular rule, Amram is derived from the verb Ekamennum and Ekambaram. Ekambaram is Maruvirtu as Ekambam and Kambham.
+It ranks first among the seven pearling sites. Due to the survival of the trade, Tiruvottiyur crossed the border This is the place where Lord gave sight in his left eye to Sundaramurthy Nayanar, who lost both eyes. Kadavaragone Nayanar, Thirukuripupu Thanda Nayanar, the Iyads who sang Thala Venbhakas, Sakya Nayanar is the Nayanmar. Here there are lingams painted by Brahma, Vishnu and Urudhara. They are known as Vellakampam, Kallag Kampam and Nalla Kampam respectively.For Ikkachi Ekamba There are only twelve Padhikams in Thirumyam. These were taught by three of the four religious leaders. Along with Kachiyekamba, there are six temples including Kachi Mertalali, Kachionakanthanarli, Kachinarikaraikkadu, Kachiyanegathangavatam and a burial ground called Kachi Mayanam. Among these, Kachimayanam is located in front of the flag tree in Tirukkachi Ekamba.             
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+
 </section>
 
-
+ 
 
 
              
@@ -365,6 +324,8 @@ It ranks first among the seven pearling sites. Due to the survival of the trade,
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                         <li><a href="administration.html">Administration</a></li>
                         <li><a href="#footer">Contact</a></li>
 
                        
