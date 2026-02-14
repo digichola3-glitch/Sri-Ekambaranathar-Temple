@@ -524,6 +524,7 @@ align-items: center;
     border-top: 4px solid #d4af37;
 }
 
+
 .festival-card:hover {
     transform: translateY(-5px);
 }
@@ -544,7 +545,10 @@ align-items: center;
     font-weight: 600;
     margin: 0;
 }
-
+.admin-card{
+  width:80%;
+  margin: auto;
+}
 
 
 .designation-badge {
@@ -657,6 +661,11 @@ justify-content: center;
     flex-direction: column;
     gap: 10px;
   }
+
+  .admin-card{
+  width: 100%;
+  margin: auto;
+}
 }
 
 
@@ -2777,6 +2786,8 @@ border-radius: 16px;
  text-align: center;
   border: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
