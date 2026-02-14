@@ -2746,9 +2746,15 @@ border-radius: 16px;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px dashed #fefe64ab;
- padding: 14px 10px;
+ padding: 14px 10px ;
  margin-bottom: 10px;
 }
+
+ .member-involved-inner li{
+ padding: 14px 10px !important;
+
+
+ }
 
 .involved-inner li span {
   color: #fefe64e8;
